@@ -1,12 +1,11 @@
 import re
 from concurrent.futures.thread import ThreadPoolExecutor
-from functools import partial
-from typing import Callable, Sequence, Tuple, List
+from typing import Callable, Tuple, List
 
 from .constants import SHA_COINS, SCRYPT_COINS, ETHASH_COINS, COIN_SYMBOL_SET, COIN_SYMBOL_MAPPINGS, FIRST4_MKEY_CS_MAPPINGS_UPPER, UNIT_CHOICES, UNIT_MAPPINGS
 from .crypto import script_to_address
 
-from bitcoin import safe_from_hex, deserialize
+from cryptos import safe_from_hex, deserialize
 
 from collections import OrderedDict
 from hashlib import sha256

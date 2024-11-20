@@ -14,7 +14,7 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 setup(name='blockcypher',
       long_description=long_description,
       long_description_content_type='text/markdown',
-      version='1.0.93',
+      version='1.0.94',
       description='BlockCypher Python Library',
       author='Michael Flaxman',
       author_email='mflaxman+blockcypher@gmail.com',
@@ -22,7 +22,7 @@ setup(name='blockcypher',
       install_requires=[
           'requests<3.0.0',
           'python-dateutil<3.0.0',
-          'bitcoin==1.1.39',
+          'cryptos<3.0.0'
           ],
       packages=['blockcypher'],
       include_package_data=True,

@@ -1,4 +1,6 @@
-from bitcoin import encode, changebase, binascii, bin_to_b58check
+import binascii
+
+from cryptos import bin_to_b58check
 
 import re
 
